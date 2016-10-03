@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>canvas starter document</title>
+  <link rel="stylesheet" href= squares.cs>
+  </head>
+
+  <body> <marquee>
+    <canvas id="canvas" width="600" height="600"> </canvas>
+    <canvas id="canvas" width="300" height="300" </canvas>
+  </body></marquee>
+
+  <script type="text/javascript">
+    var canvas = document.getElementById('canvas');
+    var drawingPad = canvas.getContext('2d');
+    drawingPad.fillStyle = "hsla(0,10%,10%,1)";
+    drawingPad.fillRect(400, 400, 400, 400);
+
+  </script>
+
+</html>
