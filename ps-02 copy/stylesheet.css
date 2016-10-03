@@ -1,0 +1,21 @@
+body {
+  margin: 300
+  padding: 100
+}
+
+.container {
+    position: relative;
+    width: 100%;
+
+}
+
+p.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  background-color: lightgray;
+}
