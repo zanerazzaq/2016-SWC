@@ -10,7 +10,16 @@
     <canvas id="canvas" width="600" height="600"> </canvas></marquee></body>
   </body>
 
-  <canvas id="myCanvas"></canvas>
+  <marquee direction="up"> <canvas id="myCanvas"></canvas> </marquee>
+
+ <center> <canvas id="myCanvas2"> </canvas></center>
+
+ <script>
+ var canvas = document.getElementById("myCanvas2");
+ var drawingPad = canvas.getContext("2d");
+ drawingPad.fillStyle = "black";
+ drawingPad.fillRect(100, 100, 100, 100);
+ </script>
 
  <script>
  var canvas = document.getElementById("myCanvas");
