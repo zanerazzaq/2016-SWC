@@ -7,14 +7,31 @@
   </head>
 
   <body> <marquee>
-    <canvas id="canvas" width="600" height="600"> </canvas>
-    <canvas id="canvas" width="300" height="300" </canvas>
-  <body> </body> </body></marquee>
+    <canvas id="canvas" width="600" height="600"> </canvas></marquee></body>
+  </body>
+
+  <marquee direction="up"> <canvas id="myCanvas"></canvas> </marquee>
+
+ <center> <canvas id="myCanvas2"> </canvas></center>
+
+ <script>
+ var canvas = document.getElementById("myCanvas2");
+ var drawingPad = canvas.getContext("2d");
+ drawingPad.fillStyle = "black";
+ drawingPad.fillRect(100, 100, 100, 100);
+ </script>
+
+ <script>
+ var canvas = document.getElementById("myCanvas");
+ var drawingPad = canvas.getContext("2d");
+ drawingPad.fillStyle = "slategray";
+ drawingPad.fillRect(100, 100, 100, 100);
+ </script>
 
   <script type="text/javascript">
     var canvas = document.getElementById('canvas');
     var drawingPad = canvas.getContext('2d');
-    drawingPad.fillStyle = "hsla(0,10%,10%,1)";
+    drawingPad.fillStyle ='hsla(0,10%,10%,3)';
     drawingPad.fillRect(400, 400, 400, 400);
 
   </script>
