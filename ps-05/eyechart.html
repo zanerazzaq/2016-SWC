@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> eye chart</title>
+    <style media="screen">
+      body {
+        font-family: 'times new roman';
+        background-color: #FFEBCD;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+      }
+      canvas {
+        border: 6px solid black;
+        color: solid black;
+        width: auto;
+        height: 90%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="canvas" width="900" height="900"></canvas>
+  </body>
+
+  <script type="text/javascript">
+
+
+    var canvas = document.getElementById('canvas');
+    var drawingPad = canvas.getContext('2d');
+
+    drawingPad.fillRect(20, 20, 10, 10);
+
+    //Draw letters for eye exam
+    var charset = ['Z', 'A', 'N', 'E', 'R', 'A', 'Z', 'Z', 'A', 'Q']
+
+
+
+  </script>
+
+</html>
