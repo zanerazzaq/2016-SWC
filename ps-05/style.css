@@ -1,0 +1,14 @@
+html { font-size: 40px, 5px;
+  font-family: times new roman;
+}
+
+
+body {
+
+    background-color: #FFEBCD ;
+    font-size: 40px, 5px;
+    text-align: left;
+    font-family: times;
+    margin: 0 auto;
+    max-width: 100em;
+  }
