@@ -1,39 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="squaresstyle.css">
     <meta charset="UTF-8">
-    <title>canvas starter document</title>
-  <link rel="stylesheet" href= squares.cs>
+    <title> squares </title>
+
   </head>
 
-  <body> <marquee>
-    <canvas id="canvas" width="600" height="600"> </canvas></marquee></body>
+  <body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+
   </body>
+  <script src="squares.js"> </script>
 
-  <marquee direction="up"> <canvas id="myCanvas"></canvas> </marquee>
 
- <center> <canvas id="myCanvas2"> </canvas></center>
 
- <script>
- var canvas = document.getElementById("myCanvas2");
- var drawingPad = canvas.getContext("2d");
- drawingPad.fillStyle = "black";
- drawingPad.fillRect(100, 100, 100, 100);
- </script>
 
- <script>
- var canvas = document.getElementById("myCanvas");
- var drawingPad = canvas.getContext("2d");
- drawingPad.fillStyle = "slategray";
- drawingPad.fillRect(100, 100, 100, 100);
- </script>
-
-  <script type="text/javascript">
-    var canvas = document.getElementById('canvas');
-    var drawingPad = canvas.getContext('2d');
-    drawingPad.fillStyle ='hsla(0,10%,10%,3)';
-    drawingPad.fillRect(400, 400, 400, 400);
-
-  </script>
 
 </html>

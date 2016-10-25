@@ -1,0 +1,26 @@
+var canvas = document.getElementById('canvas');
+var drawingPad = canvas.getContext('2d');
+drawingPad.fillStyle = "hsla(0,10%,10%,1)";
+
+drawingPad.fillRect(0, 0, 100, 100);
+drawingPad.clearRect(0,100,100,100);
+drawingPad.fillRect(0,200,100,100);
+drawingPad.clearRect(0,300,100,100);
+drawingPad.fillRect(0,400,100,100);
+drawingPad.clearRect(100,0,100,100);
+drawingPad.fillRect(200,0,100,100);
+drawingPad.clearRect(300,0,100,100);
+drawingPad.fillRect(400,0,100,100);
+drawingPad.fillRect(100,100,100,100);
+drawingPad.clearRect(100,200,100,100);
+drawingPad.fillRect(100,300,100,100);
+drawingPad.clearRect(100,200,100,100);
+drawingPad.fillRect(200,200,100,100);
+drawingPad.clearRect(300,200,100,100);
+drawingPad.fillRect(300,300,100,100);
+drawingPad.clearRect(300,400,100,100);
+drawingPad.clearRect(400,300,100,100);
+drawingPad.fillRect(400,200,100,100);
+drawingPad.fillRect(300,100,100,100);
+drawingPad.fillRect(400,400,100,100);
+drawingPad.fillRect(200,400,100,100);
