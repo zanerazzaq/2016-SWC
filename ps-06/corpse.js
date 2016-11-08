@@ -11,7 +11,8 @@ var x2 = 275; // right connection
 var width = x3 = 400;
 var horizontalCenter = 200; // centerLine
 
-var knowuh = {};
+var zanerazzaq = {};
+
 
 var drawImage = function(filename, ctx, x, y) {
   var img = document.createElement("img");
@@ -21,7 +22,7 @@ var drawImage = function(filename, ctx, x, y) {
   });
 }
 
-knowuh.drawGrid = function(ctx) {
+zanerazzaq.drawGrid = function(ctx) {
   ctx.beginPath();
   ctx.moveTo(x1,y0);
   ctx.lineTo(x1,y3);
@@ -38,41 +39,51 @@ knowuh.drawGrid = function(ctx) {
   ctx.moveTo(x0,y2);
   ctx.lineTo(x3,y2);
   ctx.stroke();
-}
+};
 
-knowuh.drawArm = function(ctx, left) {
+zanerazzaq.drawArm = function(ctx, left) {
+
 
 };
 
-knowuh.drawLeg = function(ctx, left) {
+zanerazzaq.drawLeg = function(ctx, left) {
 
 };
 
 
-knowuh.drawTop = function(ctx) {
+zanerazzaq.drawTop = function(ctx) {
   // draw a round head:
   // ctx.beginPath();
-  // ctx.arc(horizontalCenter, 120, 120, 0, circleDegrees);
+  // ctx.arc(horizontalCenter, 150, 150, 0, circleDegrees);
   // ctx.fill();
-  drawImage('head.jpg', ctx, 0, 0);
+
+
+ ctx.beginPath();
+ ctx.arc(horizontalCenter,150,150,0,circleDegrees);
+ ctx.fill();
+
 };
 
-knowuh.drawMiddle = function(ctx) {
-  knowuh.drawArm(ctx, true);
-  knowuh.drawArm(ctx, false);
+
+  drawImage('//zanerazzaq.github.io/2016-SWC/06/head.jpg', ctx, 0, 0);
+};
+
+zanerazzaq.drawMiddle = function(ctx) {
+  zanerazzaq.drawArm(ctx, true);
+  zanerazzaq.drawArm(ctx, false);
   // draw the rest of the body...
 };
 
-knowuh.drawBottom = function(ctx) {
-  knowuh.drawLeg(ctx, true);
-  knowuh.drawLeg(ctx, false);
+zanerazzaq.drawBottom = function(ctx) {
+  zanerazzaq.drawLeg(ctx, true);
+  zanerazzaq.drawLeg(ctx, false);
 };
 
-knowuh.drawCorpse = function(ctx) {
-  knowuh.drawTop(ctx);
-  knowuh.drawMiddle(ctx);
-  knowuh.drawBottom(ctx);
-  knowuh.drawGrid(ctx);
+zanerazzaq.drawCorpse = function(ctx) {
+  zanerazzaq.drawTop(ctx);
+  zanerazzaq.drawMiddle(ctx);
+  zanerazzaq.drawBottom(ctx);
+  zanerazzaq.drawGrid(ctx);
 };
 
-window.knowuh = knowuh;
+window.zanerazzaq = zanerazzaq;
