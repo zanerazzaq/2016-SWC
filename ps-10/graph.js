@@ -1,46 +1,30 @@
-var myWeight = [
-  {age: 1, weight: 10},
-  {age: 10, weight: 70},
-  {age: 18, weight: 120},
-  {age: 30, weight: 170},
-  {age: 45, weight: 160},
-];
-var svg = d3.select("#svg");
+var height = 500;
+var width = 500;
+var margin = {left: 50, bottom: 50, right: 50, top: 50};
 
-var scaleAge = d3.scaleLinear()
-    .domain([0, 70])
-    .range([20, 230]);
-
-var scaleWeight = d3.scaleLinear()
-    .domain([10, 180])
-    .range([230, 20]);
-
-var weightToRadius = d3.scaleLinear()
-    .domain([10, 180])
-    .range([0, 10]);
-
-function ageToX(datum) {
-   return scaleAge(datum.age);
-};
-
-function weightToY(datum) {
-  return scaleWeight(datum.weight);
-};
-
-function circleWidth(datum) {
- return weightToRadius(datum.weight);
-}
-
-svg.selectAll("circle")
-  .data(myWeight)
-  .enter()
-  .append("circle")
-  .style("cx", ageToX)
-  .style("cy", weightToY)
-  .style("r", circleWidth)
-
-var axis = d3.axisBottom(ageToX);
-
-svg.append("g")
-    .attr("transform", "translate(0,30)")
-    .call(axis);
+<figure>
+  <figcaption>A graph that shows the number of fruit collected</figcaption>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="chart" width="420" height="150" aria-labelledby="title" role="img">
+  <title id="title">A bart chart showing information</title>
+  <g class="bar">
+    <rect width="40" height="19"></rect>
+    <text x="45" y="9.5" dy=".35em">4 apples</text>
+  </g>
+  <g class="bar">
+    <rect width="80" height="19" y="20"></rect>
+    <text x="85" y="28" dy=".35em">8 bananas</text>
+  </g>
+  <g class="bar">
+    <rect width="150" height="19" y="40"></rect>
+    <text x="150" y="48" dy=".35em">15 kiwis</text>
+  </g>
+  <g class="bar">
+    <rect width="160" height="19" y="60"></rect>
+    <text x="161" y="68" dy=".35em">16 oranges</text>
+  </g>
+  <g class="bar">
+    <rect width="230" height="19" y="80"></rect>
+    <text x="235" y="88" dy=".35em">23 lemons</text>
+  </g>
+</svg>
+</figure>

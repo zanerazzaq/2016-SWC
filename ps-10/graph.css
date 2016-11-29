@@ -1,7 +1,10 @@
-svg {
-  border: 4px solid black;
+
+body {
+
+  width: 700px;
+  margin: 0 auto;
+  padding: 200px 0px 0px 0px;
 }
-circle {
-  r: 7;
-  fill: hsl(10,60%,60%);
+figure {
+  border: 20px solid black
 }
