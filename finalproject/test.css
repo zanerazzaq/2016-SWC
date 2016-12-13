@@ -1,0 +1,63 @@
+body, html, main {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+}
+
+.titles {
+
+  font-family: "georgia";
+	line-height: 10px;
+	padding: 500px 0px 0px 0px;
+	color: #FFFFFF;
+}
+.text1 {
+padding: 0px 40px 2px 70px;
+font-family: "georgia";
+background-color: #FFFFFF;
+}
+
+.cd-scrolling-bg {
+	min-height: 100%;
+	font-family: "georgia";
+	padding: 0px 50px 20px 70px;
+	background-color: #FFFFFF;
+
+
+}
+
+.cd-fixed-bg {
+	min-height: 100%;
+	min-width: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-position: center center;
+}
+
+
+.cd-fixed-bg.cd-bg-1 {
+	background-image: url("bostonsyriaprotest.jpg");
+}
+
+.cd-fixed-bg.cd-bg-5{
+	background-image: url("worcester.jpg");
+
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("bustudents.jpg");
+}
+
+.cd-fixed-bg.cd-bg-4{
+	background-image: url("worcesterbaba.jpg");
+}
+
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("worcesterSeal.jpg");
+}
+
+.cd-fixed-bg.cd-bg-6 {
+	background-image: url("worcesterbaba2.jpg");
+
+}

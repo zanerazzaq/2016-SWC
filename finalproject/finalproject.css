@@ -1,0 +1,50 @@
+body {
+  background: url('bostonsyriaprotest.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index:-100;
+
+
+
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #FCF7F8;
+    padding: 360px 0px 0px 0px;
+  }
+
+
+.background-image {
+
+  display: block;
+  position: -webkit-sticky;
+   position: sticky;
+   top: 0px;
+}
+
+.titles {
+  line-height: 10px;
+  font-family: "georgia";
+  display: block;
+  position: -webkit-sticky;
+   position: sticky;
+   top: 0px;
+}
+
+
+
+
+
+.container {
+   z-index:2;
+}
+
+.header {
+  margin-top:12%;
+  color:#fff;
+}
+
+.header h1 {
+   color:#white;
+}
