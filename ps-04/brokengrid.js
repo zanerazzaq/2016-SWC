@@ -44,6 +44,9 @@ var drawSquare = function(x,y,size) {
 
 
 
+drawingPad.fillRect(120,400,100,100);
+drawingPad.fillRect(200,100,20,20);
+drawingPad.fillRect(300,200,117,109);
 var size = 50;
 
 var numX = 10;
